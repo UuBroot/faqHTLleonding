@@ -1,3 +1,5 @@
+//points: [Informatik, Medientechnik, Elektronik, Medizintechnik]
+
 let question1 = {
     question: "Wie sehr interessierst du dich für den Menschlichen Körper?",
     points: [0, 0, 0, 5],
@@ -16,7 +18,7 @@ let question3 = {
 let question4 = {
     question: "Wie sehr interessierst du dich für Gesundheit und Krankheiten?",
     points: [0, 0, 0, 5],
-    image_path: '../img/.jpg'
+    image_path: '../img/illness.jpg'
 }
 let question5 = {
     question: "Wie sehr interessierst du dich für Stromkreise?",
