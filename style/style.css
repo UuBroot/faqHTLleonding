@@ -3,9 +3,17 @@
 *   Variables
 */
 :root{
+/*dark*/
     --backgroundColor: rgb(97, 97, 97);
     --mainColor1: rgb(61, 61, 61);
     --mainColor2: rgb(95, 95, 95);
+    --colorScheme: dark;
+/*free internal fire pit of hell*/
+    --backgroundColor: rgb(236, 236, 236);
+    --mainColor1: rgb(214, 214, 214);
+    --mainColor2: rgb(231, 231, 231);
+    --colorScheme: light;
+
 }
 /*
 *   Animations
@@ -22,7 +30,7 @@
 *   Not Valiables
 */
 html {
-    color-scheme: dark;
+    color-scheme: var(--colorScheme);
     text-align: center;
     font-family: "Manrope-Regular","OpenSans",sans-serif;
 }
