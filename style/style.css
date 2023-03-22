@@ -13,7 +13,7 @@
 html {
     color-scheme: dark;
     text-align: center;
-    font-family: Manrope;
+    font-family: "Manrope-Regular","OpenSans",sans-serif;
 }
 body {
     margin: 0px;
@@ -49,9 +49,11 @@ main {
 }
 .questions_grid_item {
     background-color: var(--mainColor1);
-    transition: all 1s;
+    border: 4px var(--mainColor2) solid;
+    transition: all 0.7s;
+    user-select: none;
 }
 .questions_grid_item:hover {
     background-color: var(--mainColor2);
-
+    border: 4px var(--mainColor1) solid;
 }
