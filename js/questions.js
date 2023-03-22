@@ -53,9 +53,14 @@ let question11 = {
     points: [3, 2, 5, 1],
     image_path: '../img/.jpg'
 }
-let question = {
-    question: "Wie sehr interessierst du dich für ",
-    points: [0, 0, 0, 0],
-    image_path: '../img/.jpg'
+let question12 = {
+    question: "Wie sehr interessierst du dich für IT-Sicherheit",
+    points: [3, 4, 0, 0],
+    image_path: '../img/security.jpg'
 }
-let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11];
+let question13 = {
+    question: "Wie gerne entwickelst du Software?",
+    points: [4, 4, 0, 0],
+    image_path: '../img/softwareDevelopment.jpg'
+}
+let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13];
