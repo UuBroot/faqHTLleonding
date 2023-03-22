@@ -3,17 +3,37 @@
 *   Variables
 */
 :root{
+/*dark*/
     --backgroundColor: rgb(97, 97, 97);
     --mainColor1: rgb(61, 61, 61);
     --mainColor2: rgb(95, 95, 95);
+    --colorScheme: dark;
+/*free internal fire pit of hell*/
+/*
+    --backgroundColor: rgb(236, 236, 236);
+    --mainColor1: rgb(214, 214, 214);
+    --mainColor2: rgb(231, 231, 231);
+    --colorScheme: light;
+*/
+}
+/*
+*   Animations
+*/
+@keyframes h1intro {
+    0%{transform: scale(4);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+}
+@keyframes buttonintro {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 /*
 *   Not Valiables
 */
 html {
-    color-scheme: dark;
+    color-scheme: var(--colorScheme);
     text-align: center;
-    font-family: Manrope;
+    font-family: "Manrope-Regular","OpenSans",sans-serif;
 }
 body {
     margin: 0px;
@@ -34,8 +54,13 @@ main {
     display: grid;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
+h1 {
+    animation: h1intro 0.4s;
+}
 /*
 *   Classes
 */
@@ -46,12 +71,17 @@ main {
 
     margin-right: auto;
     margin-left: auto;
+
+    animation: buttonintro 2s;
 }
 .questions_grid_item {
     background-color: var(--mainColor1);
-    transition: all 1s;
+    border: 4px var(--mainColor2) solid;
+    transition: all 0.7s;
+    user-select: none;
+
 }
 .questions_grid_item:hover {
     background-color: var(--mainColor2);
-
+    border: 4px var(--mainColor1) solid;
 }
