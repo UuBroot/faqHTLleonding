@@ -1,12 +1,16 @@
 let current_question = 0;
 let main_element = document.getElementById("main");
 let points = [0, 0, 0, 0]
+let percentages = [0, 0, 0, 0];
+let all_points = 0;
 
 loadQuestion(current_question);
 
 function loadQuestion(question_id) {
     current_question = question_id;
-    main_element.innerHTML = `
+    if (question_id < questions.length) {
+        //generate Question
+        main_element.innerHTML = `
         <h1>${questions[question_id].question}</h1>
         <div id="img" style='background-image: url("${questions[question_id].image_path}")'></div>
         <div class="questions_grid">
@@ -24,13 +28,31 @@ function loadQuestion(question_id) {
             </div>
         </div>
     `;
+    } else {
+        //generate endscreen
+
+        
+        for (let k = 0; k < points.length; k++) {
+            all_points += points[k];
+        }
+
+        
+        for (let i = 0; i < points.length; i++) {
+            percentages[i] = all_points / points[i];
+        }
+
+        main_element.innerHTML = `
+        <h1>Du bist zu ${Math.max(percentages)}</h1>
+        
+    `;
+    }
 }
 
 function answerQuestion(a) {
     let question_points = questions[current_question].points;
 
     for (let i = 0; i < question_points.length; i++) {
-        switch(a) {
+        switch (a) {
             case 4:
                 question_points[i] = 0;
                 break;
@@ -40,9 +62,9 @@ function answerQuestion(a) {
             case 2:
                 question_points[i] = (question_points[i] / 3) * 2;
                 break;
-            case 1: 
+            case 1:
                 question_points[i] = question_points[i];
-                break; 
+                break;
         }
         points[i] += question_points[i];
     }
