@@ -16,7 +16,7 @@ let question3 = {
 let question4 = {
     question: "Wie sehr interessierst du dich für Gesundheit und Krankheiten?",
     points: [0, 0, 0, 5],
-    image_path: '../img/.jpg'
+    image_path: '../img/illness.jpg'
 }
 let question5 = {
     question: "Wie sehr interessierst du dich für Stromkreise?",
