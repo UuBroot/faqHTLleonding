@@ -1,6 +1,8 @@
 let current_question = 0;
 let main_element = document.getElementById("main");
 
+loadQuestion(current_question);
+
 function loadQuestion(question_id) {
     main_element.innerHTML = `
         <h1>${questions[question_id].question}</h1>
@@ -23,5 +25,5 @@ function loadQuestion(question_id) {
 }
 
 function answerQuestion(a) {
-    
+
 }
