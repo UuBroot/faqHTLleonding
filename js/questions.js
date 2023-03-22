@@ -24,10 +24,10 @@ let question3 = {
 }
 let question4 = {
     question: "",
-    info_points: ,
-    medien_points: ,
-    elektro_points: ,
-    medizin_points: ,
+    info_points: 0,
+    medien_points: 0,
+    elektro_points: 0,
+    medizin_points: 0,
     image_path: '../img/.jpg'
 }
 
