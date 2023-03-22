@@ -79,7 +79,7 @@ h1 {
     border: 4px var(--mainColor2) solid;
     transition: all 0.7s;
     user-select: none;
-
+    cursor:pointer;
 }
 .questions_grid_item:hover {
     background-color: var(--mainColor2);
