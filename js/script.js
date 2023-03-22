@@ -21,3 +21,7 @@ function loadQuestion(question_id) {
         </div>
     `;
 }
+
+function answerQuestion(a) {
+    
+}
