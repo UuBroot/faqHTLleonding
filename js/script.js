@@ -25,5 +25,10 @@ function loadQuestion(question_id) {
 }
 
 function answerQuestion(a) {
+    let points = questions[current_question].points;
 
+    for (let i = 0; i < points.length; i++) {
+        points[i] = Math.floor(points[i] *= (1 / (a + 1)))
+    }
+    console.log(points);
 }
