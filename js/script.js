@@ -8,7 +8,7 @@ function loadQuestion(question_id) {
     current_question = question_id;
     main_element.innerHTML = `
         <h1>${questions[question_id].question}</h1>
-        <img src='${questions[question_id].image_path}'>
+        <div id="img" style='background-image: url("${questions[question_id].image_path}")'></div>
         <div class="questions_grid">
             <div onclick="answerQuestion(4)" class="questions_grid_item">
                 <h2>Gar Nicht</h2>
