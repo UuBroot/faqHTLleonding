@@ -1,3 +1,5 @@
+//points: [Informatik, Medientechnik, Elektronik, Medizintechnik]
+
 let question1 = {
     question: "Wie sehr interessierst du dich für den Menschlichen Körper?",
     points: [0, 0, 0, 5],
