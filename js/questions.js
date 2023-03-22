@@ -53,7 +53,7 @@ let question10 = {
 let question11 = {
     question: "Wie gerne arbeitest du an einem Netzwerk?",
     points: [3, 2, 5, 1],
-    image_path: '../img/.jpg'
+    image_path: '../img/network.jpg'
 }
 let question12 = {
     question: "Wie sehr interessierst du dich für IT-Sicherheit",
