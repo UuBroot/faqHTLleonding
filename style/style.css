@@ -8,6 +8,17 @@
     --mainColor2: rgb(95, 95, 95);
 }
 /*
+*   Animations
+*/
+@keyframes h1intro {
+    0%{transform: scale(4);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+}
+@keyframes buttonintro {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/*
 *   Not Valiables
 */
 html {
@@ -34,8 +45,13 @@ main {
     display: grid;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
+h1 {
+    animation: h1intro 0.4s;
+}
 /*
 *   Classes
 */
@@ -46,12 +62,15 @@ main {
 
     margin-right: auto;
     margin-left: auto;
+
+    animation: buttonintro 2s;
 }
 .questions_grid_item {
     background-color: var(--mainColor1);
     border: 4px var(--mainColor2) solid;
     transition: all 0.7s;
     user-select: none;
+
 }
 .questions_grid_item:hover {
     background-color: var(--mainColor2);
