@@ -50,8 +50,8 @@ main {
 .questions_grid_item {
     background-color: var(--mainColor1);
     transition: all 1s;
+    user-select: none;
 }
 .questions_grid_item:hover {
     background-color: var(--mainColor2);
-
 }
