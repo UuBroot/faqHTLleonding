@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*
+*   Variables
+*/
+:root{
+    --backgroundColor: rgb(97, 97, 97);
+}
+/*
+*   Not Valiables
+*/
 html {
     color-scheme: dark;
     text-align: center;
@@ -12,5 +21,15 @@ body {
     justify-content: center;
 }
 main {
-    background-color: rgb(97, 97, 97);
+    margin-top: 10%;
+    width: 60vw;
+    height: 30vw;
+
+    background-color: var(--backgroundColor);  
+    border-radius: 40px;
+    box-shadow: 10px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
