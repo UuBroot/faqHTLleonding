@@ -1,9 +1,11 @@
 let current_question = 0;
 let main_element = document.getElementById("main");
+let points = [0, 0, 0, 0]
 
 loadQuestion(current_question);
 
 function loadQuestion(question_id) {
+    current_question = question_id;
     main_element.innerHTML = `
         <h1>${questions[question_id].question}</h1>
         <img src='${questions[question_id].image_path}'>
@@ -42,6 +44,9 @@ function answerQuestion(a) {
                 question_points[i] = question_points[i];
                 break; 
         }
+        points[i] += question_points[i];
     }
     console.log(question_points);
+    console.log(points);
+    loadQuestion(current_question += 1);
 }
