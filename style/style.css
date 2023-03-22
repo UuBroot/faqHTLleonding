@@ -59,10 +59,18 @@ main {
 
     overflow: hidden;
     box-shadow: var(--boxshadow);
+
 }
 
 h1 {
     animation: h1intro 0.4s;
+}
+
+#img {
+    height: 20vw;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*
 *   Classes
