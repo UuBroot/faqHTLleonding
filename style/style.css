@@ -13,7 +13,7 @@
 html {
     color-scheme: dark;
     text-align: center;
-    font-family: Manrope;
+    font-family: "Manrope-Regular","OpenSans",sans-serif;
 }
 body {
     margin: 0px;
