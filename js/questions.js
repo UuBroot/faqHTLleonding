@@ -32,7 +32,7 @@ let question6 = {
 }
 let question7 = {
     question: "Wie sehr interessierst du dich für Roboter?",
-    points: [5, 2, 3, 1],
+    points: [5, 2, 4, 1],
     image_path: '../img/robots.jpg'
 }
 let question8 = {
@@ -42,7 +42,7 @@ let question8 = {
 }
 let question9 = {
     question: "Wie sehr interessierst du dich für das Web?",
-    points: [3, 5, 1, 0],
+    points: [3, 5, 0, 0],
     image_path: '../img/web.jpg'
 }
 let question10 = {

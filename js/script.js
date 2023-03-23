@@ -1,6 +1,6 @@
 let current_question = 0;
 let main_element = document.getElementById("main");
-let points = [0, 0, 0, 0]
+let points = [1, 1, 1, 1]
 let percentages = [
     {
         percentage: 0,
@@ -101,13 +101,21 @@ function loadQuestion(question_id) {
             }
         }
 
-        main_element.innerHTML = `
-        <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(percentages[3].percentage)}% ${percentages[3].zweig}</h1>
-        <h2>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig}</h2>
-        <h2>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig}</h2>
-        <h2>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig}</h2>
-    `;
-        document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
+        if (all_points > 4) {
+            main_element.innerHTML = `
+            <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(percentages[3].percentage)}% ${percentages[3].zweig}</h1>
+            <h2>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig}</h2>
+            <h2>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig}</h2>
+            <h2>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig}</h2>
+            `;
+            document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
+        } else {
+            main_element.innerHTML = `
+            <h1 onclick='window.open("secret/secret.html")'>Gaunz a Witziger</h1>
+            `;
+        }
+
+
     }
 }
 
