@@ -78,17 +78,17 @@ let question15 = {
 let question16 = {
     question: "Wie gerne arbeitest du Physisch an Dingen?",
     points: [0, 0, 5, 5],
-    image_path: '../img/micro.jpg'
+    image_path: '../img/circuit.jpg'
 }
 let question17 = {
     question: "Interessierst du dich für medizinische Gerätschaften?",
     points: [0, 0, 2, 5],
-    image_path: '../img/micro.jpg'
+    image_path: '../img/microSkop.jpg'
 }
 let question18 = {
-    question: "Möchtest du einmal im Gesundheitswesen arbeiten?",
+    question: "Wie sehr möchtest du einmal im Gesundheitswesen arbeiten?",
     points: [0, 0, 0, 5],
-    image_path: '../img/micro.jpg'
+    image_path: '../img/medizin.jpg'
 }
 
 let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question18, question10, question11, question12, question13, question14, question15, question16, question17];

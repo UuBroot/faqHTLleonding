@@ -4,19 +4,19 @@ let points = [0, 0, 0, 0]
 let percentages = [
     {
         percentage: 0,
-        zweig: "Informatiker:in"
+        zweig: "InformatikerIn"
     },
     {
         percentage: 0,
-        zweig: "Medientechniker:in"
+        zweig: "MedientechnikerIn"
     },
     {
         percentage: 0,
-        zweig: "Elektrotechniker:in"
+        zweig: "ElektrotechnikerIn"
     },
     {
         percentage: 0,
-        zweig: "Medizintechniker:in"
+        zweig: "MedizintechnikerIn"
     },
 
 ]
@@ -107,6 +107,7 @@ function loadQuestion(question_id) {
         <h2>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig}</h2>
         <h2>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig}</h2>
     `;
+        document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
     }
 }
 
