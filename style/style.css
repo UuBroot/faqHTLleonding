@@ -33,6 +33,14 @@
     0%{opacity: 0;}
     100%{opacity: 1;} 
 }
+@keyframes bgScroll {
+    0% {
+      background-position : 0px 0px
+    }
+    100% {
+      background-position : 0px -808px
+    }
+  }
 /*
 *   Not Valiables
 */
@@ -47,6 +55,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url();
+    animation: bgScroll 20s linear infinite;
 }
 main {
     margin-top: 10%;
