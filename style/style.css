@@ -19,6 +19,21 @@
 */
 }
 /*
+*   Responsive
+*/
+@media screen and (max-width: 800px) {
+
+    #img {
+        width: 1vw;
+        height: 1vw;
+        margin: 0px;
+    }
+    .questions_grid{
+        grid-template-columns: 100%;
+    }
+  }
+
+/*
 *   Animations
 */
 @keyframes h1intro {
@@ -60,8 +75,8 @@ body {
 }
 main {
     margin-top: 10%;
-    width: 60vw;
-    height: 30vw;
+    width: 70%;
+    height: 600px;
 
     background-color: var(--backgroundColor);  
     border-radius: 40px;
@@ -87,7 +102,7 @@ h1 {
     margin-right: auto;
 
     background-position: top;
-    background-size: 30vw;
+    background-size: 100%;
     background-repeat: no-repeat;
 
     animation: imgintro 1s; 
@@ -107,8 +122,9 @@ h1 {
 */
 .questions_grid {
     display: grid;
-    grid-template-columns: 10vw 10vw 10vw 10vw;
-    background-color: var(--mainColor1);
+    width: 60vw;
+    grid-template-columns: 25% 25% 25% 25%;
+
 
     margin-right: auto;
     margin-left: auto;
