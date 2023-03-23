@@ -66,8 +66,29 @@ let question13 = {
     image_path: '../img/softwareDevelopment.jpg'
 }
 let question14 = {
-    question: "Wie gerne entwickelst du Software?",
-    points: [4, 4, 0, 0],
-    image_path: '../img/softwareDevelopment.jpg'
+    question: "Wie sehr interessierst du dich für Video bearbeitung?",
+    points: [0, 5, 0, 0],
+    image_path: '../img/video.jpg'
 }
-let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13];
+let question15 = {
+    question: "Wie gerne arbeitest du mit Micro-Controllern?",
+    points: [0, 2, 5, 0],
+    image_path: '../img/micro.jpg'
+}
+let question16 = {
+    question: "Wie gerne arbeitest du Physisch an Dingen?",
+    points: [0, 0, 5, 5],
+    image_path: '../img/micro.jpg'
+}
+let question17 = {
+    question: "Interessierst du dich für medizinische Gerätschaften?",
+    points: [0, 0, 2, 5],
+    image_path: '../img/micro.jpg'
+}
+let question18 = {
+    question: "Möchtest du einmal im Gesundheitswesen arbeiten?",
+    points: [0, 0, 0, 5],
+    image_path: '../img/micro.jpg'
+}
+
+let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question18, question10, question11, question12, question13, question14, question15, question16, question17];
