@@ -102,7 +102,7 @@ function loadQuestion(question_id) {
         }
 
         main_element.innerHTML = `
-        <h1>Du bist zu ${Math.round(percentages[3].percentage)}% ${percentages[3].zweig}</h1>
+        <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(percentages[3].percentage)}% ${percentages[3].zweig}</h1>
         <h2>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig}</h2>
         <h2>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig}</h2>
         <h2>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig}</h2>
