@@ -18,10 +18,34 @@ let percentages = [
         percentage: 0,
         zweig: "Medizintechniker:in"
     },
-    
+
 ]
 let all_points = 0;
 
+let light_mode = {
+    "--backgroundColor": "rgb(236, 236, 236)",
+    "--mainColor1": "rgb(214, 214, 214)",
+    "--mainColor2": "rgb(231, 231, 231)",
+    "--colorScheme": "light",
+    "--boxshadow": "10px 10px 5px 0px rgba(165, 165, 165, 0.75)"
+}
+let dark_mode = {
+    "--backgroundColor": "rgb(97, 97, 97)",
+    "--mainColor1": "rgb(61, 61, 61)",
+    "--mainColor2": "rgb(95, 95, 95)",
+    "--colorScheme": "dark",
+    "--boxshadow": "10px 10px 5px 0px rgba(165, 165, 165, 0.75)"
+}
+
+let currently_light_mode = false;
+
+if (localStorage['currently_light_mode']) {
+    currently_light_mode = JSON.parse(localStorage['currently_light_mode']);
+} else {
+    localStorage['currently_light_mode'] = JSON.stringify(false);
+}
+
+setLightMode(currently_light_mode);
 loadQuestion(current_question);
 
 function loadQuestion(question_id) {
@@ -109,4 +133,34 @@ function answerQuestion(a) {
     console.log(question_points);
     console.log(points);
     loadQuestion(current_question += 1);
+}
+
+function changeLightMode() {
+    currently_light_mode = !currently_light_mode;
+    setLightMode(currently_light_mode);
+}
+
+function setLightMode(is_light_mode) {
+    let r = document.querySelector(':root');
+    let rs = getComputedStyle(r);
+
+    if (is_light_mode) {
+        console.log("Pain");
+
+        r.style.setProperty('--backgroundColor', light_mode["--backgroundColor"]);
+        r.style.setProperty('--mainColor1', light_mode["--mainColor1"]);
+        r.style.setProperty('--mainColor2', light_mode["--mainColor2"]);
+        r.style.setProperty('--colorScheme', light_mode["--colorScheme"]);
+        r.style.setProperty('--boxshadow', light_mode["--boxshadow"]);
+        colorChanger.src = '/img/darkmodeicon.svg';
+    } else {
+        r.style.setProperty('--backgroundColor', dark_mode["--backgroundColor"]);
+        r.style.setProperty('--mainColor1', dark_mode["--mainColor1"]);
+        r.style.setProperty('--mainColor2', dark_mode["--mainColor2"]);
+        r.style.setProperty('--colorScheme', dark_mode["--colorScheme"]);
+        r.style.setProperty('--boxshadow', dark_mode["--boxshadow"]);
+        colorChanger.src = '/img/lightmodeicon.svg';
+    }
+
+    localStorage['currently_light_mode'] = currently_light_mode;
 }
