@@ -29,7 +29,7 @@
         margin: 0px;
     }
     .questions_grid{
-        grid-template-columns: 100%;
+        grid-template-columns: auto;
     }
   }
 
