@@ -66,7 +66,7 @@ let question13 = {
     image_path: '../img/softwareDevelopment.jpg'
 }
 let question14 = {
-    question: "Wie sehr interessierst du dich für Video bearbeitung?",
+    question: "Wie sehr interessierst du dich für Video- und Audiobearbeitung?",
     points: [0, 5, 0, 0],
     image_path: '../img/video.jpg'
 }
