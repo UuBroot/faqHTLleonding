@@ -21,6 +21,14 @@
 /*
 *   Responsive
 */
+.questions_grid {
+    display: grid;
+    width: 60vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-right: auto;
+    margin-left: auto;
+    animation: buttonintro 2s;
+}
 @media screen and (max-width: 800px) {
 
     #img {
@@ -120,17 +128,7 @@ h1 {
 /*
 *   Classes
 */
-.questions_grid {
-    display: grid;
-    width: 60vw;
-    grid-template-columns: 25% 25% 25% 25%;
 
-
-    margin-right: auto;
-    margin-left: auto;
-
-    animation: buttonintro 2s;
-}
 
 .questions_grid_item {
     background-color: var(--mainColor1);
