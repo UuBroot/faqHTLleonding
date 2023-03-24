@@ -18,6 +18,13 @@
     --boxshadow: 10px 10px 5px 0px rgba(165, 165, 165, 0.75);
 */
 }
+
+/*
+*   Headerlines
+*/
+h1{
+    font-size: 5vh;
+}
 /*
 *   Responsive
 */
@@ -30,7 +37,7 @@
     animation: buttonintro 2s;
 }
 @media screen and (max-width: 800px) {
-
+    
     #img {
         width: 1vw;
         height: 1vw;
