@@ -112,6 +112,7 @@ function loadQuestion(question_id) {
         } else {
             main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Gaunz a Witziger</h1>
+            <h1>Wia entfön da a HAK do san so lustige Leid wie du</h1>
             `;
         }
 
