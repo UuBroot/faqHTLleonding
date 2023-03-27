@@ -164,14 +164,14 @@ function setLightMode(is_light_mode) {
     r.style.setProperty("--mainColor2", light_mode["--mainColor2"]);
     r.style.setProperty("--colorScheme", light_mode["--colorScheme"]);
     r.style.setProperty("--boxshadow", light_mode["--boxshadow"]);
-    colorChanger.src = "/img/darkmodeicon.svg";
+    colorChanger.src = "./img/darkmodeicon.svg";
   } else {
     r.style.setProperty("--backgroundColor", dark_mode["--backgroundColor"]);
     r.style.setProperty("--mainColor1", dark_mode["--mainColor1"]);
     r.style.setProperty("--mainColor2", dark_mode["--mainColor2"]);
     r.style.setProperty("--colorScheme", dark_mode["--colorScheme"]);
     r.style.setProperty("--boxshadow", dark_mode["--boxshadow"]);
-    colorChanger.src = "/img/lightmodeicon.svg";
+    colorChanger.src = "./img/lightmodeicon.svg";
   }
 
   localStorage["currently_light_mode"] = currently_light_mode;
