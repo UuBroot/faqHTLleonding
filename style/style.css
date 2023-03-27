@@ -96,9 +96,9 @@ body {
 }
 
 main {
-  margin-top: 3%;
+  margin-top: 3vh;
   width: 70%;
-  height: 800px;
+  height: 90vh;
 
   background-color: var(--backgroundColor);
   border-radius: 40px;
