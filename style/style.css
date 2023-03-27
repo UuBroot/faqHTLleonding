@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 /*
 *   Variables
 */
 :root {
-    /*dark*/
-    --backgroundColor: rgb(97, 97, 97);
-    --mainColor1: rgb(61, 61, 61);
-    --mainColor2: rgb(95, 95, 95);
-    --colorScheme: dark;
-    --boxshadow: 10px 10px 5px 0px rgba(165, 165, 165, 0.75);
-    /*free internal fire pit of hell*/
-    /*
+  /*dark*/
+  --backgroundColor: rgb(97, 97, 97);
+  --mainColor1: rgb(61, 61, 61);
+  --mainColor2: rgb(95, 95, 95);
+  --colorScheme: dark;
+  --boxshadow: 10px 10px 5px 0px rgba(165, 165, 165, 0.75);
+  /*free internal fire pit of hell*/
+  /*
     --backgroundColor: rgb(236, 236, 236);
     --mainColor1: rgb(214, 214, 214);
     --mainColor2: rgb(231, 231, 231);
@@ -21,143 +21,141 @@
 }
 
 .questions_grid {
-    display: grid;
-    width: 60vw;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin-right: auto;
-    margin-left: auto;
-    animation: buttonintro 2s;
+  display: grid;
+  width: 60vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-right: auto;
+  margin-left: auto;
+  animation: buttonintro 2s;
 }
-
-
 
 /*
 *   Animations
 */
 @keyframes h1intro {
-    0% {
-        transform: scale(4);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(4);
+    opacity: 0;
+  }
 
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes buttonintro {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes imgintro {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes bgScroll {
-    0% {
-        background-position: 0px 0px
-    }
+  0% {
+    background-position: 0px 0px;
+  }
 
-    100% {
-        background-position: 0px -808px
-    }
+  100% {
+    background-position: 0px -808px;
+  }
 }
 
 /*
 *   Not Valiables
 */
 html {
-    color-scheme: var(--colorScheme);
-    text-align: center;
-    font-family: "Manrope-Regular", "OpenSans", sans-serif;
+  color-scheme: var(--colorScheme);
+  text-align: center;
+  font-family: "Manrope-Regular", "OpenSans", sans-serif;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url();
-    animation: bgScroll 20s linear infinite;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url();
+  animation: bgScroll 20s linear infinite;
+  background-position: center;
+  background-size: 25%;
 }
 
 main {
-    margin-top: 3%;
-    width: 70%;
-    height: 800px;
+  margin-top: 3%;
+  width: 70%;
+  height: 800px;
 
-    background-color: var(--backgroundColor);
-    border-radius: 40px;
-    box-shadow: 10px;
+  background-color: var(--backgroundColor);
+  border-radius: 40px;
+  box-shadow: 10px;
 
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 
-    overflow: hidden;
-    box-shadow: var(--boxshadow);
-
+  overflow: hidden;
+  box-shadow: var(--boxshadow);
 }
 
 h1 {
-    animation: h1intro 0.4s;
-    font-size: 5vh;
+  animation: h1intro 0.4s;
+  font-size: 5vh;
 }
 
 #img {
-    height: 200%;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+  height: 200%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
-    animation: imgintro 1s;
+  animation: imgintro 1s;
 }
 
 #colorChanger {
-    position: fixed;
-    width: 90px;
-    top: 0px;
-    right: 0px;
+  position: fixed;
+  width: 90px;
+  top: 0px;
+  right: 0px;
 }
 
 #colorChanger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*
 *   Classes
 */
 
-
 .questions_grid_item {
-    background-color: var(--mainColor1);
-    border: 4px var(--mainColor2) solid;
-    transition: all 0.7s;
-    user-select: none;
-    cursor: pointer;
+  background-color: var(--mainColor1);
+  border: 4px var(--mainColor2) solid;
+  transition: all 0.7s;
+  user-select: none;
+  cursor: pointer;
 }
 
 .questions_grid_item:hover {
-    background-color: var(--mainColor2);
-    border: 4px var(--mainColor1) solid;
+  background-color: var(--mainColor2);
+  border: 4px var(--mainColor1) solid;
 }
 
 /*
@@ -165,19 +163,22 @@ h1 {
 *   Responsive
 */
 @media screen and (max-width: 800px) {
+  h1 {
+    font-size: 180%;
+  }
 
-    h1 {
-        font-size: 180%;
-    }
+  #img {
+    width: 90%;
+    height: 200%;
+    margin: 0px;
+    margin-left: 5%;
+  }
 
-    #img {
-        width: 90%;
-        height: 200%;
-        margin: 0px;
-        margin-left: 5%;
-    }
+  .questions_grid {
+    grid-template-columns: auto;
+  }
 
-    .questions_grid {
-        grid-template-columns: auto;
-    }
+  body {
+    background-size: 100%;
+  }
 }
