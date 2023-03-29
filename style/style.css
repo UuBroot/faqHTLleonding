@@ -212,7 +212,7 @@ h2 {
 /** PIE **/
 
 .pie {
-  --p: 20;
+  --p: 0;
   --b: 22px;
   --c: darkred;
   --w: 150px;
@@ -226,7 +226,6 @@ h2 {
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
-  opacity: 0;
 }
 
 .pie:before,

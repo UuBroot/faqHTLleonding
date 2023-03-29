@@ -105,7 +105,7 @@ function loadQuestion(question_id) {
       main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Du bist zu </h1>
             <br>
-            <div id="pie">${Math.round(percentages[3].percentage)}%</div>
+            <div id="pie" style="--p: 20">${Math.round(percentages[3].percentage)}%</div>
             <div id="boxZweig">${percentages[3].zweig}</div>
       `;
 
