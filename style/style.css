@@ -117,6 +117,10 @@ h1 {
   font-size: 5vh;
 }
 
+h2 {
+  margin-right: 1%;
+  margin-left: 1%;
+}
 #img {
   height: 200%;
   width: 70%;
@@ -167,6 +171,13 @@ h1 {
 /*
 *   Responsive
 */
+ @media screen and (max-width:1200px) {
+  #persentageResult {
+    display: block;
+    width: 100%;
+  }
+
+ }
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 180%;
@@ -186,4 +197,5 @@ h1 {
   body {
     background-size: 100%;
   }
+
 }
