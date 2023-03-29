@@ -104,10 +104,11 @@ function loadQuestion(question_id) {
     if (all_points > 4) {
       main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Du bist zu </h1>
-            <div class="pie" style="--p:0" id="pie"></div>
+            <br>
+            <div id="pie">${Math.round(percentages[3].percentage)}%</div>
+            <div id="boxZweig">${percentages[3].zweig}</div>
       `;
-      pie.innerHTML = `${Math.round(percentages[3].percentage)}%`
-      boxZweig.innerHTML = `${percentages[3].zweig}`
+
       pie.style.opacity = "1"
       pie.style.setProperty('--p', percentages[3].percentage)
       pie.style.setProperty('--c', percentages[3].color)
