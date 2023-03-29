@@ -98,17 +98,14 @@ function loadQuestion(question_id) {
     if (all_points > 4) {
       main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(
-              percentages[3].percentage
-            )}% ${percentages[3].zweig}</h1>
-            <h2>${Math.round(percentages[2].percentage)}% ${
-        percentages[2].zweig
-      }</h2>
-            <h2>${Math.round(percentages[1].percentage)}% ${
-        percentages[1].zweig
-      }</h2>
-            <h2>${Math.round(percentages[0].percentage)}% ${
-        percentages[0].zweig
-      }</h2>
+        percentages[3].percentage
+      )}% ${percentages[3].zweig}</h1>
+            <h2>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig
+        }</h2>
+            <h2>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig
+        }</h2>
+            <h2>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig
+        }</h2>
             `;
       document.getElementById(
         "body"
@@ -175,4 +172,8 @@ function setLightMode(is_light_mode) {
   }
 
   localStorage["currently_light_mode"] = currently_light_mode;
+}
+
+function genDiagram() {
+
 }
