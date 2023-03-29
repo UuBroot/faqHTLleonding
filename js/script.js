@@ -100,17 +100,15 @@ function loadQuestion(question_id) {
             <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(
               percentages[3].percentage
             )}% ${percentages[3].zweig}</h1>
-            <div id="persentageResult">
-                  <h2>${Math.round(percentages[2].percentage)}% ${
-                  percentages[2].zweig
-                }</h2>
-                      <h2>${Math.round(percentages[1].percentage)}% ${
-                  percentages[1].zweig
-                }</h2>
-                      <h2>${Math.round(percentages[0].percentage)}% ${
-                  percentages[0].zweig
-                }</h2>
-            </div>
+            <h2>${Math.round(percentages[2].percentage)}% ${
+        percentages[2].zweig
+      }</h2>
+            <h2>${Math.round(percentages[1].percentage)}% ${
+        percentages[1].zweig
+      }</h2>
+            <h2>${Math.round(percentages[0].percentage)}% ${
+        percentages[0].zweig
+      }</h2>
             `;
       document.getElementById(
         "body"
