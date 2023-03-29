@@ -104,7 +104,7 @@ function loadQuestion(question_id) {
       `;
       pie.innerHTML = `${Math.round(percentages[3].percentage)}%`
       boxZweig = `${percentages[3].zweig}`
-      
+      pie.
       document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
     } else {
       main_element.innerHTML = `
