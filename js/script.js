@@ -105,13 +105,13 @@ function loadQuestion(question_id) {
       main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Du bist zu </h1>
             <br>
-            <div id="pie" style="--p:0" class="pie">${Math.round(percentages[3].percentage)}%</div>
+            <div id="pie" style='--p:100' class="pie">${Math.round(percentages[3].percentage)}%</div>
             <div id="boxZweig">${percentages[3].zweig}</div>
       `;
 
       pie.style.opacity = "1"
-      pie.style.setProperty('--p', percentages[3].percentage)
-      pie.style.setProperty('--c', percentages[3].color)
+      document.getElementById('pie').style.setProperty('--p', percentages[3].percentage)
+      document.getElementById('pie').style.setProperty('--c', percentages[3].color)
       document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
     } else {
       main_element.innerHTML = `
