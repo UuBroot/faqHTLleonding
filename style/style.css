@@ -116,11 +116,16 @@ main {
 
   overflow: hidden;
   box-shadow: var(--boxshadow);
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
 }
 
 h1 {
   animation: h1intro 0.4s;
-  font-size: 5vh;
+  font-size: 60px;
 }
 
 h2 {
@@ -158,6 +163,9 @@ h2 {
   justify-content: space-between;
 }
 
+#boxZweig {
+  font-weight: 1000;
+}
 /*
 *   Classes
 */
@@ -175,40 +183,6 @@ h2 {
   border: 4px var(--mainColor1) solid;
 }
 
-/*
-/*
-*   Responsive
-*/
-@media screen and (max-width:1200px) {
-  #persentageResult {
-    display: block;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 180%;
-  }
-
-  #img {
-    width: 90%;
-    height: 200%;
-    margin: 0px;
-    margin-left: 5%;
-  }
-
-  .questions_grid {
-    grid-template-columns: auto;
-  }
-
-  body {
-    background-size: 100%;
-  }
-
-}
-
 /** PIE **/
 
 .pie {
@@ -219,13 +193,15 @@ h2 {
 
   width: var(--w);
   aspect-ratio: 1;
-  position: relative;
+  position: absolute;
   display: inline-grid;
-  margin: 5px;
   place-content: center;
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
+
+  top: 40%;
+  left: 45%;
 }
 
 .pie:before,
@@ -266,4 +242,40 @@ h2 {
   from {
     --p: 0
   }
+}
+
+/*
+/*
+*   Responsive
+*/
+@media screen and (max-width:1200px) {
+  #persentageResult {
+    display: block;
+    width: 100%;
+  }
+  .pie {
+    left: 35vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 180%;
+  }
+
+  #img {
+    width: 90%;
+    height: 200%;
+    margin: 0px;
+    margin-left: 5%;
+  }
+
+  .questions_grid {
+    grid-template-columns: auto;
+  }
+
+  body {
+    background-size: 100%;
+  }
+
 }
