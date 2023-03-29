@@ -93,6 +93,8 @@ body {
   animation: bgScroll 20s linear infinite;
   background-position: center;
   background-size: 25%;
+
+
 }
 
 main {
@@ -141,6 +143,11 @@ h1 {
   cursor: pointer;
 }
 
+#persentageResult {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 /*
 *   Classes
 */
