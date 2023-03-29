@@ -1,5 +1,7 @@
 let current_question = 0;
 let main_element = document.getElementById("main");
+let pie = document.getElementById('pie')
+let boxZweig = document.getElementById('boxZweig')
 let points = [1, 1, 1, 1];
 let percentages = [
   {
@@ -97,10 +99,12 @@ function loadQuestion(question_id) {
 
     if (all_points > 4) {
       main_element.innerHTML = `
-            <h1 onclick='window.open("secret/secret.html")'>Du bist zu ${Math.round(
-        percentages[3].percentage
-      )}% ${percentages[3].zweig}</h1>
-            <h2>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig}</h2>`;
+            <h1 onclick='window.open("secret/secret.html")'>Du bist zu </h1>
+          <br>
+      `;
+      pie.innerHTML = `${Math.round(percentages[3].percentage)}%`
+      boxZweig = `${percentages[3].zweig}`
+      
       document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
     } else {
       main_element.innerHTML = `
