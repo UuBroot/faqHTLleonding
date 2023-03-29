@@ -107,7 +107,7 @@ function loadQuestion(question_id) {
           <br>
       `;
       pie.innerHTML = `${Math.round(percentages[3].percentage)}%`
-      boxZweig = `${percentages[3].zweig}`
+      boxZweig.innerHTML = `${percentages[3].zweig}`
       pie.style.opacity = "1"
       pie.style.setProperty('--p', percentages[3].percentage)
       pie.style.setProperty('--c', percentages[3].color)
