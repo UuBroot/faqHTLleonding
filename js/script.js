@@ -7,18 +7,22 @@ let percentages = [
   {
     percentage: 0,
     zweig: "InformatikerIn",
+    color: 'rgb(10, 82, 154)'
   },
   {
     percentage: 0,
     zweig: "MedientechnikerIn",
+    color: 'rgb(140, 172, 204)'
   },
   {
     percentage: 0,
     zweig: "ElektrotechnikerIn",
+    color: 'rgb(161, 18, 42)'
   },
   {
     percentage: 0,
     zweig: "MedizintechnikerIn",
+    color: 'rgb(222, 148, 27)'
   },
 ];
 let all_points = 0;
@@ -104,7 +108,9 @@ function loadQuestion(question_id) {
       `;
       pie.innerHTML = `${Math.round(percentages[3].percentage)}%`
       boxZweig = `${percentages[3].zweig}`
-      pie.
+      pie.style.opacity = "1"
+      pie.style.setProperty('--p', percentages[3].percentage)
+      pie.style.setProperty('--c', percentages[3].color)
       document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
     } else {
       main_element.innerHTML = `

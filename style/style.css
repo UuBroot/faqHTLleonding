@@ -226,6 +226,7 @@ h2 {
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
+  opacity: 0;
 }
 
 .pie:before,
