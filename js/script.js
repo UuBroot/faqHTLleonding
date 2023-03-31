@@ -50,7 +50,7 @@ if (localStorage["currently_light_mode"]) {
   localStorage["currently_light_mode"] = JSON.stringify(false);
 }
 
-setLightMode(currently_light_mode);
+//setLightMode(currently_light_mode);
 loadQuestion(current_question);
 
 function loadQuestion(question_id) {
@@ -112,7 +112,7 @@ function loadQuestion(question_id) {
       pie.style.opacity = "1"
       document.getElementById('pie').style.setProperty('--p', percentages[3].percentage)
       document.getElementById('pie').style.setProperty('--c', percentages[3].color)
-      document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.jpg)`;
+      document.getElementById("body").style = `background-image: url(./img/${percentages[3].zweig}.webp)`;
     } else {
       main_element.innerHTML = `
             <h1 onclick='window.open("secret/secret.html")'>Gaunz a Witziger</h1>
@@ -149,7 +149,7 @@ function answerQuestion(a) {
 
 function changeLightMode() {
   currently_light_mode = !currently_light_mode;
-  setLightMode(currently_light_mode);
+  //setLightMode(currently_light_mode);
 }
 
 function setLightMode(is_light_mode) {
