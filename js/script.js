@@ -111,7 +111,9 @@ function loadQuestion(question_id) {
             <br>
             <div id="pie" style='--p:100' class="pie">${Math.round(percentages[3].percentage)}%</div>
             <h1 id="boxZweig">${percentages[3].zweig}</h1>
-            <p></p>
+            <p>${Math.round(percentages[2].percentage)}% ${percentages[2].zweig}</p>
+            <p>${Math.round(percentages[1].percentage)}% ${percentages[1].zweig}</p>
+            <p>${Math.round(percentages[0].percentage)}% ${percentages[0].zweig}</p>
       `;
 
       pie.style.opacity = "1"
