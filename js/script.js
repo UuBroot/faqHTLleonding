@@ -33,6 +33,8 @@ let light_mode = {
   "--mainColor2": "rgb(231, 231, 231)",
   "--colorScheme": "light",
   "--boxshadow": "10px 10px 5px 0px rgba(165, 165, 165, 0.75)",
+  "--border": "10px white solid;",
+  "--imgBorder": "2px white solid;"
 };
 let dark_mode = {
   "--backgroundColor": "rgb(97, 97, 97)",
@@ -40,6 +42,8 @@ let dark_mode = {
   "--mainColor2": "rgb(95, 95, 95)",
   "--colorScheme": "dark",
   "--boxshadow": "10px 10px 5px 0px rgba(165, 165, 165, 0.75)",
+  "--border": "10px rgb(48, 48, 48) solid;",
+  "--imgBorder": "2px gray solid;"
 };
 
 let currently_light_mode = false;
@@ -50,7 +54,7 @@ if (localStorage["currently_light_mode"]) {
   localStorage["currently_light_mode"] = JSON.stringify(false);
 }
 
-//setLightMode(currently_light_mode);
+setLightMode(currently_light_mode);
 loadQuestion(current_question);
 
 function loadQuestion(question_id) {
@@ -149,7 +153,7 @@ function answerQuestion(a) {
 
 function changeLightMode() {
   currently_light_mode = !currently_light_mode;
-  //setLightMode(currently_light_mode);
+  setLightMode(currently_light_mode);
 }
 
 function setLightMode(is_light_mode) {
@@ -164,6 +168,8 @@ function setLightMode(is_light_mode) {
     r.style.setProperty("--mainColor2", light_mode["--mainColor2"]);
     r.style.setProperty("--colorScheme", light_mode["--colorScheme"]);
     r.style.setProperty("--boxshadow", light_mode["--boxshadow"]);
+    r.style.setProperty("--border", light_mode["--border"]);
+    r.style.setProperty("--imgBorder", light_mode["--imgBorder"]);
     colorChanger.src = "./img/darkmodeicon.svg";
   } else {
     r.style.setProperty("--backgroundColor", dark_mode["--backgroundColor"]);
@@ -171,6 +177,8 @@ function setLightMode(is_light_mode) {
     r.style.setProperty("--mainColor2", dark_mode["--mainColor2"]);
     r.style.setProperty("--colorScheme", dark_mode["--colorScheme"]);
     r.style.setProperty("--boxshadow", dark_mode["--boxshadow"]);
+    r.style.setProperty("--border", dark_mode["--border"]);
+    r.style.setProperty("--imgBorder", dark_mode["--imgBorder"]);
     colorChanger.src = "./img/lightmodeicon.svg";
   }
 

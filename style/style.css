@@ -10,7 +10,8 @@
   --mainColor2: rgb(95, 95, 95);
   --colorScheme: dark;
   --boxshadow: 10px 10px 5px 0px rgba(65, 65, 65, 0.75);
-  --border: 10px rgb(48, 48, 48) solid;
+  --border: 10px rgb(247, 247, 247) solid;
+  --imgBorder: 2px gray solid;
 }
 
 @property --p {
@@ -25,6 +26,7 @@
   grid-template-columns: 25% 25% 25% 25%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2vw;
   animation: buttonintro 2s;
 }
 
@@ -139,6 +141,8 @@ h2 {
   background-repeat: no-repeat;
 
   animation: imgintro 1s;
+
+  border: var(--imgBorder);
 }
 
 #colorChanger {
@@ -250,6 +254,15 @@ h2 {
   }
   .pie {
     left: 35vw;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  #img {
+    width: 90%;
+    height: 130%;
+    margin: 0px;
+    margin-left: 5%;
   }
 }
 
